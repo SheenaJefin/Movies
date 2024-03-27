@@ -28,13 +28,13 @@ class MainActivity : ComponentActivity() {
         splashScreen.setKeepOnScreenCondition { viewModel.isLoading.value }
         setContent {
             MoviesTheme {
-                App()
+                MainScreen()
             }
         }
     }
 
     @Composable
-    fun App() {
+    fun MainScreen() {
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
